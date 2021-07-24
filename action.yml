@@ -3,7 +3,7 @@ author: 'P3TERX'
 description: 'Connect to GitHub Actions VM via SSH for interactive debugging'
 inputs:
   mode:
-    description: 'choose tmate or ngrok mode'
+    description: 'choose tmate ngrok frpc mode'
     required: false
     default: 'frpc'
 runs:
