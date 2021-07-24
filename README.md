@@ -48,6 +48,24 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 ```
 
+### Connect to Github Actions VM by using [frpc]
+
+```yaml
+- name: Start via frpc
+  uses: xunri233/ssh2actions@main
+  with:
+    mode: frpc
+  env:
+    # frpc配置文件下载连接
+    FRPC_CONFIG_URL: ${{ secrets.FRPC_CONFIG_URL }}
+    
+    # 系统登录账户名
+    SYS_USER: ${{ secrets.FRPC_CONFIG_URL }}
+
+    # 系统登录密码
+    SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+```
+
 ## Lisence
 
 [MIT](https://github.com/P3TERX/ssh2actions/blob/main/LICENSE) © P3TERX
