@@ -1,5 +1,5 @@
 name: 'connect to GitHub Actions'
-author: 'xunri233'
+author: 'xunri'
 description: 'Connect to GitHub Actions VM via SSH for interactive debugging'
 inputs:
   mode:
